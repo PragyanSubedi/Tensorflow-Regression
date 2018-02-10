@@ -6,5 +6,5 @@ In NN example.py
 3 input neurons are created for basic math operations.
 a is the activation function i.e. sigmoid function.
 
-    {\displaystyle S(z)={\frac {1}{1+e^{-z}}}}
+    ###S(z) = 1/1+e^(-z)   :shipit:
 
