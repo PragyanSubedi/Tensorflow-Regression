@@ -11,8 +11,8 @@ w= tf.variable(tf_random_normal([n_features,n_dense_neurons])) # [10,3]
 
 b= tf. variable (tf.ones([n_dense_neurons])) # [1,1,1]
 
-xW = tf.matmul(x,w)
-z= tf.add(xW,b)
+xW = tf.matmul(x,w) #[1, 10] *[10,3]
+z= tf.add(xW,b) # [1,3] + [1,3]
 a = tf.sigmoid(z) #Activation function
 
 init = tf.global_variables_initializer()
