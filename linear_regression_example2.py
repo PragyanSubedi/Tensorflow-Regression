@@ -39,9 +39,9 @@ with tf.Session() as sess:
         rand_ind = np.random.randint(len(x_data), size = batch_size)
         feed={xph:x_data[rand_ind],yph:y_true[rand_ind]}
         sess.run(train,feed_dict=feed)
-
         model_m,model_b = sess.run([m,b])
         y_hat = x_data * model_m + model_b
+
 my_data.sample(250).plot(kind='scatter',x='X Data', y ='Y')
 plt.plot(x_data,y_hat,'r')
 plt.show()
